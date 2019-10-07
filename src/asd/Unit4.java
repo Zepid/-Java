@@ -1,21 +1,21 @@
 package asd;
 
-abstract class /*final*/ Animal{
+abstract class /*final*/ Animal2{
 	String name;
 	void shout() {
 		System.out.println("½Ð£¡");
 	}
 	abstract void run();
-	public Animal(String name) {
+	public Animal2(String name) {
 		System.out.println("name="+name);
 	}
 }
 
-class Dog extends Animal{
+class Dog1 extends Animal2{
 //	public void printname() {
 //		System.out.println("name="+super.name);
 //	}
-	public Dog() {
+	public Dog1() {
 		super("¹·µ°£¡");
 	}
 	void shout() {
@@ -28,7 +28,7 @@ class Dog extends Animal{
 }
 public class Unit4 {
 	public static void main(String[] args) {
-		Dog gd=new Dog();
+		Dog1 gd=new Dog1();
 		gd.name="¹·µ°";
 //		gd.printname();
 		gd.shout();
